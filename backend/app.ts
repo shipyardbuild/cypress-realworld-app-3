@@ -28,8 +28,12 @@ import { frontendPort, getBackendPort } from "../src/utils/portUtils";
 require("dotenv").config();
 
 const corsOption = {
-  origin: process.env.SHIPYARD_DOMAIN_FRONTEND ? `https://${process.env.SHIPYARD_DOMAIN_FRONTEND}` : `http://localhost:${frontendPort}`,
+  origin: "https://frontend-cypress-realworld-ap.dev.shipyardbuild.shipyard.host",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  allowedHeaders: ["Content-Type", "Authorization"],
+  exposedHeaders: ["Content-Encoding"],
   credentials: true,
+  preflightContinue: true,
 };
 
 const schema = loadSchemaSync(join(__dirname, "./graphql/schema.graphql"), {

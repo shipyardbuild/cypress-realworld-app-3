@@ -148,7 +148,7 @@
     "dev:coverage": "cross-env NODE_ENV=development CYPRESS_COVERAGE=true concurrently yarn:start:react yarn:start:api:watch",
     "dev:google": "cross-env VITE_GOOGLE=true NODE_ENV=development concurrently yarn:start:react yarn:start:api:watch",
     "dev:okta": "cross-env VITE_OKTA=true NODE_ENV=development concurrently yarn:start:react yarn:start:api:watch",
-    "dev": "cross-env NODE_ENV=development concurrently yarn:start:react yarn:start:api:watch",
+    "dev": "cross-env NODE_ENV=development concurrently yarn:start:react yarn:start:api",
     "postdb:seed": "yarn db:seed:dev",
     "postinstall": "husky install && patch-package",
     "prebuild:ci": "yarn predev:cognito:ci",

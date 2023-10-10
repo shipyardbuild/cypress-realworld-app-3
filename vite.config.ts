@@ -42,16 +42,6 @@ export default defineConfig(({ command, mode }) => {
     server: {
       port: 3000,
       host: "0.0.0.0",
-      cors: {
-        origin: "https://frontend-cypress-realworld-ap.dev.shipyardbuild.shipyard.host",
-        methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-        allowedHeaders: ["Content-Type", "Authorization"],
-        exposedHeaders: ["Content-Encoding"],
-        credentials: true,
-        maxAge: 86400,
-        preflightContinue: true,
-        optionsSuccessStatus: 204,
-      },
     },
     build: {
       outDir: "build",
