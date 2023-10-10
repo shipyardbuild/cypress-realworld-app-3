@@ -28,7 +28,7 @@ import { frontendPort, getBackendPort } from "../src/utils/portUtils";
 require("dotenv").config();
 
 const corsOption = {
-  origin: "https://frontend-cypress-realworld-ap.dev.shipyardbuild.shipyard.host",
+  origin: "https://frontend-cypress-realworld-app-cypress-realworld-ap-pr1.dev.shipyardbuild.shipyard.host",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   allowedHeaders: ["Content-Type", "Authorization"],
   exposedHeaders: ["Content-Encoding"],
