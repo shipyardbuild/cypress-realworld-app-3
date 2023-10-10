@@ -2,6 +2,7 @@ import axios from "axios";
 
 const httpClient = axios.create({
   withCredentials: false,
+  mode: "no-cors",
 });
 
 httpClient.interceptors.request.use((config) => {
