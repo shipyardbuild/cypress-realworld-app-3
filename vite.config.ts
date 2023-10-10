@@ -43,7 +43,7 @@ export default defineConfig(({ command, mode }) => {
       port: 3000,
       host: "0.0.0.0",
       cors: {
-        origin: false,
+        origin: true,
       },
     },
     build: {
