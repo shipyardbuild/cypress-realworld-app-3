@@ -5,7 +5,7 @@ services:
     build:
       context: '.'
     labels:
-      shipyard.route: '/'
+      shipyard.route: '/oop'
       shipyard.primary-route: 'true'
       shipyard.liveness.http.path: '/health'
       shipyard.liveness.initial_delay: '15'
@@ -25,7 +25,7 @@ services:
     build:
       context: '.'
     labels:
-      shipyard.route: '/'
+      shipyard.route: '/backendoop'
     environment:
         SHIPYARD_DOMAIN_FRONTEND: ${SHIPYARD_DOMAIN_FRONTEND-}
     ports:
