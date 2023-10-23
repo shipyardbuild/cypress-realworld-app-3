@@ -35,10 +35,10 @@ services:
     env_file:
       - .env
 
-    mongodb:
-        image: mongo
-        volumes:
-            - ./data:/data/db
+  mongodb:
+    image: mongo
+    volumes:
+      - ./data:/data/db
 
 volumes:
   dbdata:
