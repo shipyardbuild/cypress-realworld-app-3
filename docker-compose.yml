@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  frontend:
+  frontendsounique:
     build:
       context: '.'
     labels:
@@ -21,7 +21,7 @@ services:
     env_file:
       - .env
 
-  backend:
+  backendsounique:
     build:
       context: '.'
     labels:
